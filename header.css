@@ -1,0 +1,146 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(239, 234, 234);
+    background-color: white;
+    z-index: 100;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.hamburger-button, .youtube-logo-button {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+.hamburger {
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 24px;
+}
+.youtube-logo {
+    height: 20px;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+    margin-left: 70px;
+    flex: 1;
+    max-width: 520px;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    border-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-width: 1px;
+    width: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.search-bar::placeholder {
+    font-size: 16px;
+    font-family: Roboto, Arial;
+}
+.search-button {
+    border-style: solid;
+    border-width: 1px;
+    height: 40px;
+    width: 66px;
+    margin-left: -1px;
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(196, 196, 196);
+    position: relative;
+}
+.voice-button, .search-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-button .tooltip, .voice-button .tooltip, .youtube-app-button .tooltip, .notifications-button .tooltip, .upload-button .tooltip {
+    font-family: Roboto, Arial; 
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transform: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip, .voice-button:hover .tooltip, .upload-button:hover .tooltip, .notifications-button:hover .tooltip, .youtube-app-button:hover .tooltip {
+    opacity: 1;
+}
+.search {
+    height: 25px;
+}
+.voice-button {
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+.voice {
+    width: 24px;
+}
+.right {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload-button, .youtube-app-button, .notifications-button, .channel-profile-picture-button {
+    border: none;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload {
+    width: 24px;
+}
+.youtube-app {
+    width: 24px;
+}
+.notifications {
+    width: 24px;
+}
+.channel-profile-picture {
+    width: 32px;
+    border-radius: 16px;
+}
+.notifications-button-container {
+    position: relative;
+}
+.notifications-count {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-family: Roboto, Arial;
+}

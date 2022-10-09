@@ -1,0 +1,124 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media (max-width: 550px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 551px) and (max-width: 749px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1100px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.thumbnail {
+    width: 100%;
+}
+.contant {
+    display: flex;
+    margin-top: 10px;
+}
+.image-column {
+  width: 50px;
+}
+.video-contant {
+    flex: 1;
+}.profile-image {
+    width: 40px;
+    border-radius: 20px;
+}
+.video-info {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.video-author, .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+.video-author {
+    margin-bottom: 4px;
+}
+.thumbnail-section {
+    position: relative;
+}
+.time {
+    font-family: Roboto, arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: black;
+    color: white;
+}
+.link {
+    color: black;
+    text-decoration: none;
+}
+.floating {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: -85px;
+    left: 15px;
+    right: -150px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    z-index: 50;
+}
+.floating-image{
+    position: relative;
+}
+.floating-image:hover .floating {
+    opacity: 1;
+}
+.pop {
+    flex: 2;
+    padding: 8px;
+}
+.profile-pop {
+    width: 42px;
+    border-radius: 50px;
+    
+}
+.pop2 {
+    flex: 7;
+    padding-right: 8px;
+}
+.popname {
+    font-weight: 700;
+    font-family: ROboto, Arial;
+    font-size: 14px;
+}
+.popsub {
+    font-size: 12px;
+}
+
+
+
